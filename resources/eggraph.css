@@ -1,0 +1,96 @@
+/*
+	Dies ist die css-Datei, in der das Layout des Erreichbarkeits-
+	Graphen beschrieben ist.
+*/
+
+
+
+graph {
+	padding: 70px;
+}
+
+/*
+	Style-Angabe fuer einen Knoten
+
+*/
+node {
+	
+	shape: rounded-box;
+
+	size: 130px, 20px;
+
+	z-index: 1;
+
+	fill-mode: plain;
+	fill-color: white;
+
+	stroke-mode: plain;
+	stroke-color: black;
+	stroke-width: 2px;
+
+	text-color: black;
+	text-size: 14;
+}
+
+node.anfangsknoten {
+	fill-color: grey;
+}
+
+node.aktuell {
+	shadow-mode: plain; 
+	shadow-width: 3px; 
+	shadow-color: #FC0; 
+	shadow-offset: 0px;
+}
+
+node.anfangsknotenAktuell {
+	fill-color: grey;
+	shadow-mode: plain; 
+	shadow-width: 3px; 
+	shadow-color: #FC0; 
+	shadow-offset: 0px;
+}
+
+node.pfadAnfang{
+	fill-color: lightyellow;
+}
+
+node.pfadEnde{
+	fill-color: tomato;
+}
+
+node.anfangsknotenPfadAnfang {
+	fill-mode: gradient-radial; 
+	fill-color: yellow, greay;
+}
+
+
+/*
+	Style-Angabe fuer eine Kante
+*/
+edge {
+	z-index: 0;
+
+	fill-color: #003366;
+
+	text-size:  12;
+	text-color: purple;
+	text-background-mode: plain;
+
+	arrow-shape: arrow;
+	arrow-size: 9px, 6px;
+}
+
+edge.aktuell{
+	shadow-mode: plain; 
+	shadow-width: 3px; 
+	shadow-color: #FC0; 
+	shadow-offset: 0px;
+}
+
+edge.pfad{
+	shadow-mode: plain; 
+	shadow-width: 3px; 
+	shadow-color: lightblue; 
+	shadow-offset: 0px; 
+}

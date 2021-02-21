@@ -1,0 +1,101 @@
+/*
+	Dies ist die css-Datei, in der das Layout des Graphen beschrieben ist.
+*/
+
+
+
+graph {
+	padding: 50px;
+}
+
+/*
+	Style-Angabe fuer einen Knoten
+*/
+node {
+	size: 35px;
+
+	z-index: 1;
+
+	fill-mode: plain;
+	fill-color: white;
+
+	text-color: black;
+	text-size: 14;
+	text-alignment: under;
+	text-background-mode: plain;
+	text-offset: 0px, 5px;
+
+	stroke-mode: plain;
+	stroke-color: #003366;
+	stroke-width: 1px;
+}
+
+
+/*
+	Styles (Bilder) für die Markierungen der Stellen
+*/
+node.m0 {
+	fill-mode: plain;
+	fill-color: white;
+}
+
+node.m1 {
+	fill-image: url('images/1.png');
+}
+
+node.m2 {
+	fill-image: url('images/2.png');
+}
+
+node.m3 {
+	fill-image: url('images/3.png');
+}
+
+node.m4 {
+	fill-image: url('images/4.png');
+}
+
+node.m5 {
+	fill-image: url('images/5.png');
+}
+
+node.m6 {
+	fill-image: url('images/6.png');
+}
+
+node.m7 {
+	fill-image: url('images/7.png');
+}
+
+node.m8 {
+	fill-image: url('images/8.png');
+}
+
+node.m9 {
+	fill-image: url('images/9.png');
+}
+
+
+/*
+	Style für die Aktivierung einer Transition 
+*/
+node.aktiv {
+	fill-mode: plain;
+	fill-color: green;
+}
+
+/*
+	Style-Angabe fuer eine Kante
+*/
+edge {
+	z-index: 0;
+
+	fill-color: #003366;
+
+	text-size:  12;
+	text-color: purple;
+	text-background-mode: plain;
+
+	arrow-shape: arrow;
+	arrow-size: 9px, 6px;
+}
